@@ -15,7 +15,7 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre o festival</a>
+                  <a class="nav-link" href="#">Sobre o Festival</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Cadastrar Banda/Artista</a>
@@ -39,13 +39,13 @@
     <main class="container__main">
       
         <section class="container__Section_principal">
-            <form action="#" method="post" class="was-validated container__form">
-                <div>
+            <form action="#" method="post" class="was-validated container__form"><!--Inicio Formulário-->
+                <div><!--Inicio Section 1-->
                     <div class="col-md-4 alinhar__nome">
                         <label for="validationCustom01" class="form-label container_label">Nome da Banda/Artista</label>
                         <input type="text" class="form-control" id="bandaNome" required>
                         <div class="invalid-feedback">
-                            Entre com nome válido!
+                            Entre com um nome!
                         </div>
                     </div>
                     <br>
@@ -83,13 +83,13 @@
                 <div class="input_checkbox"><!-- Inicio dos Termos de condição-->
                     <p class="container_label">Termos de Condição:</p>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="termos" id="termosAceitos" required>
+                        <input class="form-check-input" type="checkbox" name="termos" id="termosAceitos" required>
                         <label class="form-check-label container_label" for="termosAceitos">
                             Confirmar conformidade com requisitos específicos do festival
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="termos" id="termosRecusados" required>
+                        <input class="form-check-input" type="checkbox" name="termos" id="termosRecusados" required>
                         <label class="form-check-label container_label" for="termosRecusados">
                             Consentimento para o uso de imagens ou vídeos da apresentação
                         </label>
@@ -99,7 +99,7 @@
                     </div>
                 </div><!--Fim dos Termos de Condição-->
 
-                <div><!--Inicio da Section2-->
+                <div class="container__Section__2"><!--Inicio da Section2-->
                     <div class="col-md-3 alinhar__nome">
                         <label for="validationCustom04" class="form-label container_label">Estado</label>
                         <select class="form-select" id="validationCustom04" required>
@@ -109,7 +109,7 @@
                           <option value="1">Goiáis</option>
                           <option value="1">Rio de Janeiro</option>
                         </select>
-                        <div class="invalid-feedback">
+                        <div class="invalid-feedback invalid__section">
                           Selecione um Estado válido.
                         </div>
                     </div>
@@ -133,7 +133,7 @@
                     </div>
                     <br>
 
-                    <div>
+                    <div class="site_banda">
                         <label for="site" class="form-label container_label">Site da Banda</label>
                         <input type="url" class="form-control" id="site" name="site" placeholder="www.exemplo.com.br">
                     </div>
@@ -142,21 +142,25 @@
                     <div class="input_checkbox">
                         <p class="container_label">A banda possui experiências em outros festivais?</p>
                         <div>
-                            <input class="form-check-input" type="radio" name="radio1" id="radio1" required>
+                            <input class="form-check-input" type="radio" name="experiencias" id="radio1" required>
                             <label class="form-check-label container_label" for="flexRadioDefault1">
                                 Sim
                             </label>
                         </div>
-                        
-                    </div>
-                    <div class="input_checkbox">
+                    
                         <div>
-                            <input class="form-check-input" type="radio" name="radio2" id="radio2" required>
+                            <input class="form-check-input" type="radio" name="experiencias" id="radio2" required>
                             <label class="form-check-label container_label" for="flexRadioDefault2">
                                 Não
                             </label>
                         </div>
                     </div>
+                    <br>
+
+                    <div class="button__submit">
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </div>
+
                 </div><!--Fim da section2-->
             </form>
 
@@ -168,6 +172,6 @@
             
         </div>
     </footer>
-
+<script src="JavaScript/validForm.js"></script>
 </body>
 </html>

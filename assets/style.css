@@ -27,6 +27,10 @@ img {
     box-shadow: 5px 6px 20px #000;
 }
 
+.col-md-3 select {
+    width: 20.5rem;
+}
+
 .nav {
     font-family: var(--texto-normal);
     font-weight: 600;
@@ -84,12 +88,16 @@ img {
     padding: 7px 0px 7px 0px;
 }
 
-.container_label {
-    color: #fff;
+.container__Section__2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
-.col-md-3 select {
-    width: 13.5rem;
+.container_label {
+    color: #fff;
+    font-family: var(--texto-normal);
+    font-size: 16px;
 }
 
 .alinhar__nome {
@@ -105,4 +113,16 @@ img {
 .input_checkbox p {
     text-align: center;
 }
+
+.button__submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.invalid__section {
+    display: none !important;
+    justify-content: flex-end !important;
+    overflow: hidden !important;
+}
+
 
