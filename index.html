@@ -39,7 +39,7 @@
     <main class="container__main">
       
         <section class="container__Section_principal">
-            <form action="#" method="post" class="was-validated container__form"><!--Inicio Formulário-->
+            <form action="#" method="post" class="needs-validation container__form" novalidate><!--Inicio Formulário-->
                 <div><!--Inicio Section 1-->
                     <div class="col-md-4 alinhar__nome">
                         <label for="validationCustom01" class="form-label container_label">Nome da Banda/Artista</label>
@@ -77,6 +77,9 @@
                     <div class="mb-3">
                         <label for="formFileMultiple" class="form-label container_label">Imagens da Banda/Músicas</label>
                         <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                        <div class="invalid-feedback">
+                            Envie imagens e músicas
+                        </div>
                       </div>
                 </div><!--Fim da section1-->
 
@@ -109,7 +112,7 @@
                           <option value="1">Goiáis</option>
                           <option value="1">Rio de Janeiro</option>
                         </select>
-                        <div class="invalid-feedback invalid__section">
+                        <div class="invalid-feedback" id="option-estado">
                           Selecione um Estado válido.
                         </div>
                     </div>
@@ -118,24 +121,33 @@
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label container_label">Email</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="name@example.com">
+                        <div class="invalid-feedback">
+                            Informe um e-mail válido!
+                        </div>
                     </div>
                     <br>
 
                     <div>
                         <label for="cpf" class="form-label container_label">CPF/CNPJ</label>
                         <input type="text" class="form-control" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-01" required>
+                        <div class="invalid-feedback">
+                            CPF inválido
+                        </div>
                     </div>
                     <br>
 
                     <div>
                         <label for="telefone" class="form-label container_label">Telefone</label>
                         <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(99) 12345-6789" required>
+                        <div class="invalid-feedback">
+                            Informe um telefone para contato!
+                        </div>
                     </div>
                     <br>
 
                     <div class="site_banda">
-                        <label for="site" class="form-label container_label">Site da Banda</label>
-                        <input type="url" class="form-control" id="site" name="site" placeholder="www.exemplo.com.br">
+                        <label for="site" class=" container_label">Site da Banda</label>
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                     </div>
                     <br>
 

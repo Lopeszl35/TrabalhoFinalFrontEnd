@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap'); /* importa fontes do google */
 
 :root {
-    --texto-normal: 'Montserrat', sans-serif;
+    --texto-titulo: 'Krona one', sans-serif;
+    --texto-paragrafo: 'Montserrat', sans-serif;
+    --texto-formulario: 'Montserrat', sans-serif;
+    --cor-de-fundo: #0D0D0D;
+    --cor-texto: #F2F2F2;
+    --cor-titulo-strong: #0F71F2;
+    --cor-box: #000;
 }
 
 
 body {
     box-sizing: border-box;
-    background-color: #0D0D0D !important; /*Tirando o estilo do bootstrap*/
+    background-color: var(--cor-de-fundo) !important; /*Tirando o estilo do bootstrap*/
     margin: 0;
     padding: 0;
 }
@@ -20,11 +26,19 @@ input[type="url"] {
     width: 40vh;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Um valor alto para garantir que a navegação fique acima de outros elementos */
+}
+
 img {
     max-width: 70%; 
     height: auto;
     border-radius: 6px;
-    box-shadow: 5px 6px 20px #000;
+    box-shadow: 5px 6px 20px var(--cor-box);
 }
 
 .col-md-3 select {
@@ -32,20 +46,21 @@ img {
 }
 
 .nav {
-    font-family: var(--texto-normal);
+    font-family: var(--texto-titulo);
     font-weight: 600;
     gap: 5.5rem;
     padding: 0.5rem;
 }
 
 .titulo {
-    color: #F2F2F2;
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 5rem;
+    color: var(--cor-texto);
+    font-family: var(--texto-titulo);
     text-align: center;
 }
 
 .titulo__strong {
-    color: #0F71F2;
+    color: var(--cor-titulo-strong);
 }
 
 .section__article {
@@ -60,8 +75,8 @@ img {
 }
 
 .section__article_texto {
-    color: #fff;
-    font-family: var(--texto-normal);
+    color: var(--cor-texto);
+    font-family: 'Krona one', sans-serif;
 }
 
 .container__main {
@@ -72,13 +87,14 @@ img {
 
 .container__Section_principal {
     width: 85%;
-    border: 2px solid #000;
+    border: 2px solid var(--cor-box);
     border-radius: 16px;
-    box-shadow: 15px 10px 5px #000;
+    box-shadow: 15px 10px 5px var(--cor-box);
     padding: 2% 5%;
     background-image: url('festival.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .container__form {
@@ -95,8 +111,8 @@ img {
 }
 
 .container_label {
-    color: #fff;
-    font-family: var(--texto-normal);
+    color: var(--cor-texto);
+    font-family: var(--texto-formulario);
     font-size: 16px;
 }
 
@@ -119,10 +135,9 @@ img {
     justify-content: flex-end;
 }
 
-.invalid__section {
-    display: none !important;
-    justify-content: flex-end !important;
-    overflow: hidden !important;
+#option-estado {
+    width: 20.50rem;
 }
+ 
 
 
