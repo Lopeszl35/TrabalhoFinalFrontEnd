@@ -196,6 +196,17 @@ img {
         order: 3;
     }
 }
+
+@media (max-width: 786px) {
+    .nav {
+        gap: 0rem;
+        padding: 0rem;
+    }
+
+    .container__Section_principal {
+        background-position: 10%;
+    }
+}
  
 
 
