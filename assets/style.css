@@ -8,6 +8,7 @@
     --cor-texto: #F2F2F2;
     --cor-titulo-strong: #0F71F2;
     --cor-box: #000;
+    --cor-rodape: #014034;
 }
 
 
@@ -137,6 +138,16 @@ img {
 .button__submit {
     display: flex;
     justify-content: flex-end;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    color: var(--cor-texto);
+    font-family: var(--texto-paragrafo);
+    font-weight: 600;
+    background-color: var(--cor-rodape);
+    padding: 20px;
 }
 
 #option-estado {
