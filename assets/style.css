@@ -86,11 +86,6 @@ img {
     padding: 8% 0%;
 }
 
-.form__titulo {
-    display: flex;
-    justify-content: center;
-}
-
 .container__Section_principal {
     width: 100%;
     border: 2px solid var(--cor-box);
@@ -101,6 +96,12 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.container__section__titulo {
+    display: flex;
+    justify-content: center;
+    color: var(--cor-titulo-strong);
 }
 
 .container__form {
@@ -125,19 +126,21 @@ img {
     display: contents;
 }
 
-.input_checkbox {
+.input_checkbox__termos {
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 
-.input_checkbox p {
+.input_checkbox__termos p {
     text-align: center;
 }
 
 .button__submit {
     display: flex;
     justify-content: flex-end;
+    /* max-height: 42px; */
+    align-items: flex-end;
 }
 
 .rodape {
@@ -152,6 +155,46 @@ img {
 
 #option-estado {
     width: 20.50rem;
+}
+
+@media (max-width: 1368px) {
+    .container__Section_principal {
+        background-position: 35%;
+    }
+
+    .container__section__titulo {
+        justify-content: flex-start;
+    }
+
+    .container__form {
+        flex-direction: column;
+    }
+
+    .section__article {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .img__flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container__Section__2 {
+        align-items: flex-start;
+    }
+
+    .biografia__banda {
+        width: 28% !important;
+    }
+
+    .order__termos {
+        order: 2;
+    }
+
+    .order__submit {
+        order: 3;
+    }
 }
  
 

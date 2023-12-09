@@ -31,7 +31,7 @@
             <p class="section__article_texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam natus consequatur ipsum in cum fuga numquam molestias corrupti officia ex, iste beatae repellendus iusto labore id et, suscipit, at est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio cupiditate similique quidem, quasi tenetur rem, illo reprehenderit, doloremque suscipit corrupti in perspiciatis accusantium ipsam modi at libero temporibus dolorum?</p>
             <p class="section__article_texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium libero odio repudiandae quas accusantium aut corrupti? Repudiandae nisi ipsa hic voluptates sit iste enim alias inventore. Officia quas tenetur at.</p>
         </article>
-        <div class="img-fluid wrapper">
+        <div class="img-fluid img__flex">
             <img src="img/festivalMusica.png" alt="festival de música">
         </div>
     </section>
@@ -39,6 +39,7 @@
     <main class="container__main" id="formulario">
       
         <section class="container__Section_principal">
+            <h1 class="container__section__titulo"">Se Inscreva No Festival</h1>
             <form action="#" method="post" class="needs-validation container__form" novalidate><!--Inicio Formulário-->
                 <div><!--Inicio Section 1-->
                     <div class="col-md-4 alinhar__nome">
@@ -70,7 +71,7 @@
 
                     <div class="mb-3">
                         <label for="validationTextarea" class="form-label container_label">Biografia da Banda</label>
-                        <textarea class="form-control" id="validationTextarea" required></textarea>
+                        <textarea class="form-control biografia__banda" id="validationTextarea" required></textarea>
                         <div class="invalid-feedback">
                             Biográfia Obrigátoria
                         </div>
@@ -86,7 +87,7 @@
                       </div>
                 </div><!--Fim da section1-->
 
-                <div class="input_checkbox"><!-- Inicio dos Termos de condição-->
+                <div class="input_checkbox__termos order__termos"><!-- Inicio dos Termos de condição-->
                     <p class="container_label">Termos de Condição:</p>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="termos" id="termosAceitos" required>
@@ -154,7 +155,7 @@
                     </div>
                     <br>
 
-                    <div class="input_checkbox">
+                    <div class="input_checkbox__termos">
                         <p class="container_label">A banda possui experiências em outros festivais?</p>
                         <div>
                             <input class="form-check-input" type="radio" name="experiencias" id="radio1" required>
@@ -172,11 +173,10 @@
                     </div>
                     <br>
 
-                    <div class="button__submit">
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                    </div>
-
                 </div><!--Fim da section2-->
+                <div class="button__submit order__submit">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
             </form>
 
         </section>
