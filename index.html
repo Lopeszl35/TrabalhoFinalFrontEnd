@@ -18,7 +18,7 @@
                   <a class="nav-link" href="#">Sobre o Festival</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Cadastrar Banda/Artista</a>
+                  <a class="nav-link" href="#formulario">Cadastrar Banda/Artista</a>
                 </li>
               </ul>
         </nav>
@@ -31,12 +31,14 @@
             <p class="section__article_texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam natus consequatur ipsum in cum fuga numquam molestias corrupti officia ex, iste beatae repellendus iusto labore id et, suscipit, at est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum optio cupiditate similique quidem, quasi tenetur rem, illo reprehenderit, doloremque suscipit corrupti in perspiciatis accusantium ipsam modi at libero temporibus dolorum?</p>
             <p class="section__article_texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium libero odio repudiandae quas accusantium aut corrupti? Repudiandae nisi ipsa hic voluptates sit iste enim alias inventore. Officia quas tenetur at.</p>
         </article>
-        <div class="img-fluid">
+        <div class="img-fluid wrapper">
             <img src="img/festivalMusica.png" alt="festival de música">
         </div>
     </section>
 
-    <main class="container__main">
+    
+
+    <main class="container__main" id="formulario">
       
         <section class="container__Section_principal">
             <form action="#" method="post" class="needs-validation container__form" novalidate><!--Inicio Formulário-->
@@ -52,7 +54,7 @@
 
                     <div class="col-md-4 alinhar__nome">
                         <label for="validationCustom01" class="form-label container_label">Gênero Músical</label>
-                        <input type="text" class="form-control" id="SegundoNome" required>
+                        <input type="text" class="form-control" id="generoMusical" required>
                         <div class="invalid-feedback">
                             Campo Obrigátorio!
                         </div>
@@ -61,16 +63,19 @@
 
                     <div class="col-md-6 alinhar__nome">
                         <label for="validationCustom03" class="form-label container_label">Número de integrantes</label>
-                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <input type="text" class="form-control" id="numIntegrantes" required>
                         <div class="invalid-feedback">
-                          Por Favor entre com uma cidade válida.
+                          Informe o número de integrantes.
                         </div>
                     </div>
                     <br>
 
                     <div class="mb-3">
                         <label for="validationTextarea" class="form-label container_label">Biografia da Banda</label>
-                        <textarea class="form-control is-invalid" id="validationTextarea" required></textarea>
+                        <textarea class="form-control" id="validationTextarea" required></textarea>
+                        <div class="invalid-feedback">
+                            Biográfia Obrigátoria
+                        </div>
                     </div>
                     <br>
 
@@ -120,7 +125,7 @@
 
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label container_label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="name@example.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" pattern="[a-zA-Z0-9._%+-]+@(outlook\.com|hotmail\.com|gmail\.com)" required placeholder="name@example.com">
                         <div class="invalid-feedback">
                             Informe um e-mail válido!
                         </div>
@@ -181,7 +186,7 @@
 
     <footer>
         <div>
-            
+            <p></p>
         </div>
     </footer>
 <script src="JavaScript/validForm.js"></script>
